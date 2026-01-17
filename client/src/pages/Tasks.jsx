@@ -8,6 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Spinner from '../components/Spinner';
 import ConfirmationModal from '../components/ConfirmationModal';
 import TasksSkeleton from '../components/TasksSkeleton';
+import SEO from '../components/SEO';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -139,6 +140,10 @@ const Tasks = () => {
 
   return (
     <div className="space-y-6">
+      <SEO
+        title="My Tasks"
+        description="Manage, sort, and filter your daily tasks."
+      />
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
         <h2 className="text-3xl font-bold text-white">My Tasks</h2>
         <motion.button

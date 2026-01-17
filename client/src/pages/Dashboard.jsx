@@ -17,6 +17,7 @@ import { CheckCircle, Clock, AlertCircle, List } from 'lucide-react';
 
 import { motion } from 'framer-motion';
 import DashboardSkeleton from '../components/DashboardSkeleton';
+import SEO from '../components/SEO';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -87,6 +88,10 @@ const Dashboard = () => {
       initial="hidden"
       animate="visible"
     >
+      <SEO
+        title="Dashboard"
+        description="Overview of your tasks and productivity statistics."
+      />
       <motion.h2
         variants={itemVariants}
         className="text-3xl font-bold text-white"

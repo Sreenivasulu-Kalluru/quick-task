@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useNavigate, Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import { toast } from 'react-toastify';
 
 const Register = () => {
@@ -22,8 +24,12 @@ const Register = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900 px-4">
-      <div className="bg-slate-800 p-8 rounded-2xl shadow-xl w-full max-w-md border border-slate-700">
+    <div className="min-h-screen flex items-center justify-center p-4">
+      <SEO
+        title="Create Account"
+        description="Sign up for a new QuickTask account."
+      />
+      <motion.div className="bg-slate-800 p-8 rounded-2xl shadow-xl w-full max-w-md border border-slate-700">
         <h2 className="text-3xl font-bold text-center mb-2 bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
           Create Account
         </h2>
@@ -85,7 +91,7 @@ const Register = () => {
             Sign in
           </Link>
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };
