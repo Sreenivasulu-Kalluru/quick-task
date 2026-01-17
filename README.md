@@ -52,8 +52,8 @@ QuickTask is a modern, full-stack task management application that combines a ro
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/quicktask.git
-cd quicktask
+git clone https://github.com/Sreenivasulu-Kalluru/quick-task.git
+cd quick-task
 ```
 
 ### 2. Setup Server (Node.js)
